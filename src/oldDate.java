@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Date {
+public class oldDate {
     String date;
     public String setDate() {
 
@@ -8,7 +8,7 @@ public class Date {
         System.out.println("YYYY: ");
         int year = addYear.nextInt();
 
-        if (year >= 1000 && year <= 9999) {
+        if (year >= 1000 && year <= 2023) {
             Scanner addMonth = new Scanner(System.in);
             System.out.println("MM: ");
             int month = addMonth.nextInt();
@@ -20,7 +20,8 @@ public class Date {
                 int day = addDay.nextInt();
 
                 if (day >= 1 && day <= 31) {
-                    this.date = "" + year + "-" + month + "-" + day + "";
+                    this.date = "" + year  + month + day + "";
+
 
                 } else {
                     System.out.println("Invalid Day");
